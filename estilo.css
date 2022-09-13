@@ -1,0 +1,108 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@1,100&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+:root {
+    --white: #fff;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin-top: 10%;
+    background-color: #e5f3ff;
+    font-family: 'Poppins', sans-serif;
+}
+
+.container, .row, 
+.right-col .item:nth-child(n + 2) {
+    display: flex;
+}
+
+.container {
+    justify-content: center;
+    text-align: center;
+}
+
+.left-col {
+    width: 100px;
+    margin: 34.5% 4% 0 -12%;
+}
+
+.left-col .item {
+    background-color: #dbdbdb;
+}
+
+.left-col .item p:last-child{
+    margin-top: 71.5%;
+}
+
+.right-col {
+    width: 450px;
+}
+
+.left-col .item, h1, span {
+    font-size: xx-large;
+}
+
+.right-col .item:first-child p, #btn{
+    font-size: x-large;
+}
+
+.left-col .item, h1, .right-col p,
+.right-col .item:nth-child(n + 2) {
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 5px 5px 10px -3px #0000006e;
+}
+
+.right-col .item:nth-child(n + 2) {
+    align-items: center;
+    justify-content: center;
+    width: auto;
+    height: 60px;
+    box-sizing: content-box;
+    background-color: #2c2c2c;
+}
+
+.right-col .item:nth-child(3) {
+   margin-top: 3%;
+}
+
+.right-col #copy {
+    margin: 16% 6% 0 6%;
+    background-color: rgb(127, 127, 127);
+    font-weight: 600;
+}
+
+.right-col p, .btn, h1 {
+    background-color: var(--white);
+}
+
+.right-col .item:first-child p {
+    margin-top: 10%;
+    margin-bottom: 5%;
+}
+
+#btn {
+    margin-top: 10%;
+    padding: 15px;
+    width: auto;
+    border-radius: 40px;
+    border-style: none;
+    transition: .5s;
+    box-shadow: 3px 3px 12px -3px #0000006e;
+}
+
+#btn:hover {
+    background-color: #1b1b1b;
+    transform: scale(110%);
+    transition: ease-in-out .5s;
+}
+
+#btn:hover, span {
+    color: var(--white);
+    cursor: pointer;
+}
